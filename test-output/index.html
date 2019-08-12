@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-SampleSuite" class="navigator-link">
+              <span class="suite-name border-failed">SampleSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-SampleSuite" class="navigator-link ">
+                    <span>C:\RestFramework\cucumber_testng\src\test\resources\TestNGRunTestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-SampleSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-SampleSuite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-SampleSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-SampleSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-SampleSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-SampleSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,  1 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SampleSuite" class="hide-methods failed suite-SampleSuite"> (hide)</a> <!-- hide-methods failed suite-SampleSuite -->
+                      <a href="#" panel-name="suite-SampleSuite" class="show-methods failed suite-SampleSuite"> (show)</a> <!-- show-methods failed suite-SampleSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-SampleSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSuite" title="com.cz.suiterunners.RunFlatTests" class="method navigator-link" hash-for-method="runScenario(&quot;CreateAssociation With Valid Da2&quot;, &quot;Testing The Endpoints  For The Assoication Service2&quot;)">runScenario("CreateAssociation With Valid Da2", "Testing The Endpoints  For The Assoication Service2")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SampleSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SampleSuite" class="hide-methods skipped suite-SampleSuite"> (hide)</a> <!-- hide-methods skipped suite-SampleSuite -->
+                      <a href="#" panel-name="suite-SampleSuite" class="show-methods skipped suite-SampleSuite"> (show)</a> <!-- show-methods skipped suite-SampleSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-SampleSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSuite" title="com.cz.suiterunners.RunApiATSuite" class="method navigator-link" hash-for-method="runScenario(&quot;Test the feature for printing the expected string&quot;, &quot;Sample Api tests to demonstrate CRUD operation...)">runScenario("Test the feature for printing the expected string", "Sample Api tests to demonstrate CRUD operation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SampleSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SampleSuite" class="hide-methods passed suite-SampleSuite"> (hide)</a> <!-- hide-methods passed suite-SampleSuite -->
+                      <a href="#" panel-name="suite-SampleSuite" class="show-methods passed suite-SampleSuite"> (show)</a> <!-- show-methods passed suite-SampleSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-SampleSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSuite" title="com.cz.suiterunners.RunFlatTests" class="method navigator-link" hash-for-method="runScenario(&quot;CreateAssociation With Valid Data2&quot;, &quot;Testing The Endpoints  For The Assoication Service2&quot;)">runScenario("CreateAssociation With Valid Data2", "Testing The Endpoints  For The Assoication Service2")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSuite" title="com.cz.suiterunners.RunApiATSuite" class="method navigator-link" hash-for-method="runScenario(&quot;CreateAssociation With Valid Dat&quot;, &quot;Testing The Endpoints  For The Assoication Service&quot;)">runScenario("CreateAssociation With Valid Dat", "Testing The Endpoints  For The Assoication Service")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSuite" title="com.cz.suiterunners.RunApiATSuite" class="method navigator-link" hash-for-method="runScenario(&quot;CreateAssociation With Valid Data&quot;, &quot;Testing The Endpoints  For The Assoication Service&quot;)">runScenario("CreateAssociation With Valid Data", "Testing The Endpoints  For The Assoication Service")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SampleSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SampleSuite" class="panel SampleSuite">
+          <div class="suite-SampleSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cz.suiterunners.RunFlatTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CreateAssociation With Valid Da2&quot;, &quot;Testing The Endpoints  For The Assoication Service2&quot;)">
+                  </a> <!-- runScenario("CreateAssociation With Valid Da2", "Testing The Endpoints  For The Assoication Service2") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CreateAssociation With Valid Da2", "Testing The Endpoints  For The Assoication Service2")</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.cz.test.services.AssociationService.postAssociation(AssociationService.java:19)
+	at com.cz.test.step_definitions.api.AssociationServiceSteps.association_Posted(AssociationServiceSteps.java:55)
+	at ✽.Association Posted(target/test-classes/features/api/Association2.feature:15)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleSuite-class-failed -->
+          <div class="suite-SampleSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cz.suiterunners.RunApiATSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Test the feature for printing the expected string&quot;, &quot;Sample Api tests to demonstrate CRUD operation...)">
+                  </a> <!-- runScenario("Test the feature for printing the expected string", "Sample Api tests to demonstrate CRUD operation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Test the feature for printing the expected string", "Sample Api tests to demonstrate CRUD operation")</span>
+                  <div class="stack-trace">org.testng.SkipException: There are undefined steps
+	at cucumber.api.testng.TestCaseResultListener.getError(TestCaseResultListener.java:60)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:72)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleSuite-class-skipped -->
+          <div class="suite-SampleSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cz.suiterunners.RunApiATSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CreateAssociation With Valid Dat&quot;, &quot;Testing The Endpoints  For The Assoication Service&quot;)">
+                  </a> <!-- runScenario("CreateAssociation With Valid Dat", "Testing The Endpoints  For The Assoication Service") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CreateAssociation With Valid Dat", "Testing The Endpoints  For The Assoication Service")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CreateAssociation With Valid Data&quot;, &quot;Testing The Endpoints  For The Assoication Service&quot;)">
+                  </a> <!-- runScenario("CreateAssociation With Valid Data", "Testing The Endpoints  For The Assoication Service") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CreateAssociation With Valid Data", "Testing The Endpoints  For The Assoication Service")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleSuite-class-passed -->
+          <div class="suite-SampleSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cz.suiterunners.RunFlatTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CreateAssociation With Valid Data2&quot;, &quot;Testing The Endpoints  For The Assoication Service2&quot;)">
+                  </a> <!-- runScenario("CreateAssociation With Valid Data2", "Testing The Endpoints  For The Assoication Service2") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CreateAssociation With Valid Data2", "Testing The Endpoints  For The Assoication Service2")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleSuite-class-passed -->
+        </div> <!-- panel SampleSuite -->
+        <div panel-name="test-xml-SampleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\RestFramework\cucumber_testng\src\test\resources\TestNGRunTestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; name=&quot;SampleSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;APITest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cz.suiterunners.RunApiATSuite&quot;/&gt;
+      &lt;class name=&quot;com.cz.suiterunners.RunFlatTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- APITest --&gt;
+&lt;/suite&gt; &lt;!-- SampleSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SampleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SampleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">APITest (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SampleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SampleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SampleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SampleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SampleSuite');
+function tableData_SampleSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.cz.suiterunners.RunApiATSuite')
+data.setCell(0, 3, 6213);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.cz.suiterunners.RunFlatTests')
+data.setCell(1, 3, 1781);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.cz.suiterunners.RunApiATSuite')
+data.setCell(2, 3, 1659);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.cz.suiterunners.RunApiATSuite')
+data.setCell(3, 3, 758);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.cz.suiterunners.RunFlatTests')
+data.setCell(4, 3, 16);
+window.suiteTableData['SampleSuite']= { tableData: data, tableDiv: 'times-div-SampleSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-SampleSuite">
+              </div> <!-- times-div-SampleSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SampleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SampleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SampleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SampleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cz.suiterunners.RunApiATSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Test the feature for printing the expected string", "Sample Api tests to demonstrate CRUD operation...)</span>
+                <span class="method-start">367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("CreateAssociation With Valid Data", "Testing The Endpoints  For The Assoication Service")</span>
+                <span class="method-start">1140 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("CreateAssociation With Valid Dat", "Testing The Endpoints  For The Assoication Service")</span>
+                <span class="method-start">7368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">9027 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cz.suiterunners.RunFlatTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">9659 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("CreateAssociation With Valid Data2", "Testing The Endpoints  For The Assoication Service2")</span>
+                <span class="method-start">9691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("CreateAssociation With Valid Da2", "Testing The Endpoints  For The Assoication Service2")</span>
+                <span class="method-start">11472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">11488 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
